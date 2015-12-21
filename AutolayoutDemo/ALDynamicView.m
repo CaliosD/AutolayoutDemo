@@ -110,7 +110,7 @@
 
 - (void)setLineAdded:(BOOL)lineAdded
 {
-    self.lineAdded = lineAdded;
+    _lineAdded = lineAdded;
     
     [self setNeedsUpdateConstraints];
     [self updateConstraintsIfNeeded];

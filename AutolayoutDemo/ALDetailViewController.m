@@ -26,13 +26,18 @@
     return self;
 }
 
+- (void)loadView
+{
+    self.view =  _viewClass.new;
+    if ([self.view respondsToSelector:@selector(setLineAdded:)]) {
+        [self.view setValue:@YES forKey:@"lineAdded"];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view =  _viewClass.new;
-//    if ([_viewClass resolveInstanceMethod:@selector(test)]) {
-//        [_viewClass setValue:@YES forKey:@"lindAdded"];
-//    }
+
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
