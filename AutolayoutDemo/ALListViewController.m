@@ -13,6 +13,7 @@
 #import "AL&SiblingElem.h"
 #import "AL&UIScrollView.h"
 #import "AL&UITableView.h"
+#import "AL&UITableView&iOS8.h"
 #import "ALDynamicView.h"
 
 static NSString *cellIdentifier = @"ALListViewControllerCell";
@@ -39,6 +40,8 @@ static NSString *cellIdentifier = @"ALListViewControllerCell";
                                                     viewClass:[AL_UIScrollView class]],
                  [[ALDetailViewController alloc]initWithTitle:@"AL&UITableView"
                                                     viewClass:[AL_UITableView class]],
+                 [[ALDetailViewController alloc]initWithTitle:@"AL&UITableView&iOS8"
+                                                    viewClass:[AL_UITableView_iOS8 class]],
                  [[ALDetailViewController alloc]initWithTitle:@"ALDynamicView"
                                                     viewClass:[ALDynamicView class]]];
     
@@ -77,9 +80,6 @@ static NSString *cellIdentifier = @"ALListViewControllerCell";
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     ALDetailViewController *viewController = [_vcArray objectAtIndex:indexPath.row];
-//    if ([viewController.view respondsToSelector:@selector(lineAdded)]) {
-//        [viewController.view setValue:@YES forKey:@"lindAdded"];
-//    }
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

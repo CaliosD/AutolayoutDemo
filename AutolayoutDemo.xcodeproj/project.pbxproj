@@ -24,6 +24,8 @@
 		EED281971B143F9600778383 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EED2818F1B143F9600778383 /* ALView+PureLayout.m */; };
 		EED281981B143F9600778383 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EED281911B143F9600778383 /* NSArray+PureLayout.m */; };
 		EED281991B143F9600778383 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EED281931B143F9600778383 /* NSLayoutConstraint+PureLayout.m */; };
+		EED5D8481C28E31400433F02 /* AL&UITableViewCell&iOS8.m in Sources */ = {isa = PBXBuildFile; fileRef = EED5D8471C28E31400433F02 /* AL&UITableViewCell&iOS8.m */; };
+		EED5D84B1C28E3C400433F02 /* AL&UITableView&iOS8.m in Sources */ = {isa = PBXBuildFile; fileRef = EED5D84A1C28E3C400433F02 /* AL&UITableView&iOS8.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,10 @@
 		EED281951B143F9600778383 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
 		EED281961B143F9600778383 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
 		EED2819B1B14402A00778383 /* AutolayoutDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutolayoutDemo-Prefix.pch"; sourceTree = "<group>"; };
+		EED5D8461C28E31400433F02 /* AL&UITableViewCell&iOS8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AL&UITableViewCell&iOS8.h"; sourceTree = "<group>"; };
+		EED5D8471C28E31400433F02 /* AL&UITableViewCell&iOS8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AL&UITableViewCell&iOS8.m"; sourceTree = "<group>"; };
+		EED5D8491C28E3C400433F02 /* AL&UITableView&iOS8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AL&UITableView&iOS8.h"; sourceTree = "<group>"; };
+		EED5D84A1C28E3C400433F02 /* AL&UITableView&iOS8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AL&UITableView&iOS8.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,10 @@
 				EED281831B12F8F500778383 /* AL&UITableViewCell.m */,
 				EED281851B13082400778383 /* AL&UITableView.h */,
 				EED281861B13082400778383 /* AL&UITableView.m */,
+				EED5D8461C28E31400433F02 /* AL&UITableViewCell&iOS8.h */,
+				EED5D8471C28E31400433F02 /* AL&UITableViewCell&iOS8.m */,
+				EED5D8491C28E3C400433F02 /* AL&UITableView&iOS8.h */,
+				EED5D84A1C28E3C400433F02 /* AL&UITableView&iOS8.m */,
 				EE8908BD1C254B7F00C957B1 /* ALDynamicView.h */,
 				EE8908BE1C254B7F00C957B1 /* ALDynamicView.m */,
 				EED2818D1B143F9600778383 /* PureLayout */,
@@ -285,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE8908BF1C254B7F00C957B1 /* ALDynamicView.m in Sources */,
+				EED5D8481C28E31400433F02 /* AL&UITableViewCell&iOS8.m in Sources */,
 				EED2817F1B12F13700778383 /* AL&UIScrollView.m in Sources */,
 				AE79584D3E308C48E2FFA616 /* main.m in Sources */,
 				AE795685935276242F6AAD15 /* AppDelegate.m in Sources */,
@@ -297,6 +308,7 @@
 				EE14134E1B0F407F0055D2D0 /* ALDetailViewController.m in Sources */,
 				EE1413541B0F47C20055D2D0 /* AL&SiblingElem.m in Sources */,
 				EED281991B143F9600778383 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				EED5D84B1C28E3C400433F02 /* AL&UITableView&iOS8.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
