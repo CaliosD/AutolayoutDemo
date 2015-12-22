@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  This is a dynamic view consists of many subviews. You can set one of the subviews show or not using a property named `lineAdded`.
+ */
 @interface ALDynamicView : UIView
 
 /**

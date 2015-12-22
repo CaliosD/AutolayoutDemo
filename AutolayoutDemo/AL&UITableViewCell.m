@@ -47,9 +47,7 @@
 //        [UIView autoSetPriority:UILayoutPriorityRequired forConstraints:^{
 //            [_nameLabel autoSetContentCompressionResistancePriorityForAxis:ALAxisVertical];
 //        }];
-        [_nameLabel autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:kLabelVerticalInsets];
-        [_nameLabel autoPinEdgeToSuperviewEdge:ALEdgeLeading withInset:kLabelHorizontalInsets];
-        [_nameLabel autoPinEdgeToSuperviewEdge:ALEdgeTrailing withInset:kLabelHorizontalInsets];
+        [_nameLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(kLabelVerticalInsets, kLabelHorizontalInsets, 0, kLabelHorizontalInsets) excludingEdge:ALEdgeBottom];
         
         // This is the constraint that connects the title and body labels. It is a "greater than or equal" inequality so that if the row height is
         // slightly larger than what is actually required to fit the cell's subviews, the extra space will go here. (This is the case on iOS 7
@@ -61,28 +59,9 @@
 //        [UIView autoSetPriority:UILayoutPriorityRequired forConstraints:^{
 //            [_descLabel autoSetContentCompressionResistancePriorityForAxis:ALAxisVertical];
 //        }];
-        [_descLabel autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:kLabelVerticalInsets];
-        [_descLabel autoPinEdgeToSuperviewEdge:ALEdgeTrailing withInset:kLabelHorizontalInsets];
-        [_descLabel autoPinEdgeToSuperviewEdge:ALEdgeLeading withInset:kLabelHorizontalInsets];
+        [_descLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, kLabelHorizontalInsets, kLabelVerticalInsets, kLabelHorizontalInsets) excludingEdge:ALEdgeTop];
         
         _didSetupConstraints = YES;
-        
-        
-        
-        
-        
-        /* Calios: Auto Layout without PureLayout framework.(0526)
-        // Notice that the constraints are added to the contentView property and not directly on self.
-        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-6-[_nameLabel]-6-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_nameLabel)]];
-        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-6-[_nameLabel]-6-[_descLabel]-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_nameLabel,_descLabel)]];
-
-        [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:_nameLabel attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:_descLabel attribute:NSLayoutAttributeTrailing multiplier:1.f constant:0.f]];
-       [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:_nameLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:_descLabel attribute:NSLayoutAttributeWidth multiplier:1.f constant:0.f]];
-//        [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:_descLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:_nameLabel attribute:NSLayoutAttributeWidth multiplier:1.f constant:0.f]];
-//        [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:_nameLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.f constant:600.f]];
-        
-        _didSetupConstraints = YES;
-         */
     }
     [super updateConstraints];
 }

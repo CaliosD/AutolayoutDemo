@@ -54,7 +54,7 @@
         [self addSubview:fLabel];
         return fLabel;
     };
-    
+
     _dLabel1 = dynamicLabelCreate(1);
     _dLabel1.text = @"dynamicLabel 1 dynamicLabel 1 dynamicLabel 1 dynamicLabel 1 dynamicLabel 1 dynamicLabel 1 dynamicLabel 1 dynamicLabel 1 dynamicLabel 1";
     _dLabel2 = dynamicLabelCreate(2);
@@ -88,6 +88,7 @@
         self.didSetupConstraints = YES;
     }
     
+    // Update constraints here.
     if (self.lineAdded) {
         [_dLabel2 autoPinEdgeToSuperviewEdge:ALEdgeLeading withInset:10];
         [_dLabel2 autoPinEdgeToSuperviewEdge:ALEdgeTrailing withInset:10];

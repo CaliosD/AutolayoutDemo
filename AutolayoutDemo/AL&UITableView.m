@@ -41,6 +41,11 @@
         
         _dataArray = @[@"A long text.",@"This is a long text.",@"This is a long text. This is a long text.",@"This is a long text.This is a long text.This is a long text.This is a long text.",@"This is a long text.This is a long text.This is a long text.This is a long text.This is a long text.This is a long text.This is a long text.This is a long text.",@"This is a long text.This is a long text.This is a long text.This is a long text.This is a long text.This is a long text.This is a long text.This is a long text.This is a long text.This is a long text."];
         _detailArray = @[@"The correct API to use is UIView systemLayoutSizeFittingSize:, passing either UILayoutFittingCompressedSize or UILayoutFittingExpandedSize.",@"The correct API to use is UIView systemLayoutSizeFittingSize:, passing either UILayoutFittingCompressedSize or UILayoutFittingExpandedSize.",@"The correct API to use is UIView systemLayoutSizeFittingSize:, passing either UILayoutFittingCompressedSize or UILayoutFittingExpandedSize.The correct API to use is UIView systemLayoutSizeFittingSize:, passing either UILayoutFittingCompressedSize or UILayoutFittingExpandedSize.",@"The correct API to use is UIView systemLayoutSizeFittingSize:, passing either UILayoutFittingCompressedSize or UILayoutFittingExpandedSize.The correct API to use is UIView systemLayoutSizeFittingSize:, passing either UILayoutFittingCompressedSize or UILayoutFittingExpandedSize.The correct API to use is UIView systemLayoutSizeFittingSize:, passing either UILayoutFittingCompressedSize or UILayoutFittingExpandedSize.",@"The correct API to use is UIView systemLayoutSizeFittingSize:, passing either UILayoutFittingCompressedSize or UILayoutFittingExpandedSize.The correct API to use is UIView systemLayoutSizeFittingSize:, passing either UILayoutFittingCompressedSize or UILayoutFittingExpandedSize.",@"The correct API to use is UIView systemLayoutSizeFittingSize:, passing either UILayoutFittingCompressedSize or UILayoutFittingExpandedSize."];
+
+        // Used to fix iOS9 tableview margin.(1221)
+//        if([self respondsToSelector:@selector(setCellLayoutMarginsFollowReadableWidth:)]) {
+//            self.cellLayoutMarginsFollowReadableWidth = NO;
+//        }
     }
     return self;
 }
